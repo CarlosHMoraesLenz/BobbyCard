@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#458A6C</color>
+    <color name="back">#F0F0F0</color>
+    <color name="title">#333333</color>
+    <color name="fundoChoiceDir">#CFCFCF</color>
+    <color name="itemSelected">#F3F3F3</color>
+    <color name="boardItemSelected">#458A6C</color>
+    <color name="itemUnselected">#F3F3F3</color>
+    <color name="boardItemUnselected">#79A0A0</color>
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cadastroPet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GUI_03_cadNewPet"
+    android:background="@color/back">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/titleTelaCad"
+                android:textColor="@color/title"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintNome"
+                android:inputType="textPersonName" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <EditText
+                android:id="@+id/editChip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintChip"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/txtEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtEspecie"
+                android:textColor="@color/title"
+                android:textSize="18dp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEspecieC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEspecieC"
+                    android:textColor="@color/title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtEspecieG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEspecieG"
+                    android:textColor="@color/title"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtEspecieR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEspecieR"
+                    android:textColor="@color/title"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtEspecieA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEspecieA"
+                    android:textColor="@color/title"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtEspecieO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEspecieO"
+                    android:textColor="@color/title"/>
+            </TableRow>
+
+            <EditText
+                android:id="@+id/editEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintEspecie"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editAnoNasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintAnoNasc"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <TextView
+                android:id="@+id/txtPorte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPorte"
+                android:textColor="@color/title"
+                android:textSize="18dp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPorteP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPorteP"
+                    android:textColor="@color/title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtPorteM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPorteM"
+                    android:textColor="@color/title"
+                    android:layout_marginRight="6dp"/>
+                <TextView
+                    android:id="@+id/txtPorteG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPorteG"
+                    android:textColor="@color/title"
+                    android:layout_marginRight="6dp"/>
+
+            </TableRow>
+
+            <EditText
+                android:id="@+id/editPorte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintPorte"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintPeso"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintAltura"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <EditText
+                android:id="@+id/editPelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hintPelo"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnCadPet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="@string/btnCad" />
+
+            <Button
+                android:id="@+id/btnAltPet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="@string/btnAlt"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

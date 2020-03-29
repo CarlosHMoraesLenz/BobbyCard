@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitlePetNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPetNome"
+        android:textSize="18dp"
+        android:textColor="@color/title"/>
+
+    <TextView
+        android:id="@+id/tvPetNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvliPetNome"
+        android:textSize="15dp"
+        android:textColor="@color/title"/>
+
+    <TextView
+        android:id="@+id/tvTitlePetChip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvPetChip"
+        android:textSize="18dp"
+        android:textColor="@color/title"/>
+
+    <TextView
+        android:id="@+id/tvPetChip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvliPetChip"
+        android:textSize="15dp"
+        android:textColor="@color/title"/>
+
+</LinearLayout>

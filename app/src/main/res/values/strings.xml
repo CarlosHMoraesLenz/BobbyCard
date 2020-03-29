@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Bobby\'s Card</string>
+    <!-- nomes das telas -->
+    <!-- telas inicial  -->
+    <string name="btncadNewPet">Cadastrar Pet</string>
+    <!-- cadastro de novo pets -->
+    <string name="titleTelaCad">Cadastro do Pet</string>
+    <string name="hintNome">Insira o nome do pet...</string>
+    <string name="hintChip">Insira o numero do chip do pet...</string>
+    <string name="txtEspecie">Espécie</string>
+    <string name="txtEspecieC">Cachorro</string>
+    <string name="txtEspecieG">Gato</string>
+    <string name="txtEspecieA">Anfibio</string>
+    <string name="txtEspecieR">Roedor</string>
+    <string name="txtEspecieO">Outros</string>
+    <string name="hintEspecie">Insira a espécie do pet...</string>
+    <string name="hintAnoNasc">Insira o ano de nacimento do pet...</string>
+    <string name="txtPorte">Porte</string>
+    <string name="txtPorteP">Pequeno</string>
+    <string name="txtPorteM">Médio</string>
+    <string name="txtPorteG">Grande</string>
+    <string name="hintPorte">Insira o porte do pet...</string>
+    <string name="hintPeso">Insira o peso do pet...</string>
+    <string name="hintAltura">Insira a altura do pet...</string>
+    <string name="hintPelo">Insira a cor do pelo do pet...</string>
+    <string name="txtAddImg">Adicionar imagem</string>
+    <string name="btnchoose">Escolha uma imagem</string>
+    <string name="btnCad">Cadastrar</string>
+    <string name="btnAlt">Alterar</string>
+    <!--  pet cadastrado -->
+    <string name="titleTeladoPet">Informações do pet</string>
+    <string name="titlenome">Nome:</string>
+    <string name="titlechip">Chip:</string>
+    <string name="titleespecie">Espécie:</string>
+    <string name="titleanonasc">Nascido:</string>
+    <string name="titleporte">Porte:</string>
+    <string name="titlepeso">Peso:</string>
+    <string name="titlealtura">Altura:</string>
+    <string name="titlepelo">Pelagem:</string>
+    <!-- list_inicial -->
+    <string name="tvPetNome">Pet nome:</string>
+    <string name="tvliPetNome" />
+    <string name="tvPetChip">Pet chip:</string>
+    <string name="tvliPetChip" />
+    <!--   -->
+</resources>
