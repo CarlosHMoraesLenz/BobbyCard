@@ -19,6 +19,7 @@ public class PetsAdapterTelaInicial extends BaseAdapter {
 
     public TextView tvPetNome;
     public TextView tvPetChip;
+    public TextView tvPetEspecie;
 
     public PetsAdapterTelaInicial(Context context, ArrayList<Pet> listPet) {
         //super();
@@ -93,10 +94,12 @@ public class PetsAdapterTelaInicial extends BaseAdapter {
             //Guarda a referencia dos objeto
             tvPetNome = convertView.findViewById(R.id.tvPetNome);
             tvPetChip = convertView.findViewById(R.id.tvPetChip);
+            tvPetEspecie = convertView.findViewById(R.id.tvPetEspecie);
 
             //Setando o pet na respectiva linha
             tvPetNome.setText(" "+pt.getNome());
             tvPetChip.setText(" "+pt.getChip());
+            tvPetEspecie.setText(" "+pt.getEspecie());
 
             return convertView;
         } catch (Exception e) {

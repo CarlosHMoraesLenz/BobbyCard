@@ -21,15 +21,19 @@ import java.util.ArrayList;
 
 public class GUI_04_petCadastrado extends AppCompatActivity {
 
-    private LinearLayout tela;
     private TextView nometc ;
     private TextView chiptc ;
-    private TextView aNasctc ;
-    private TextView alturatc ;
-    private TextView pesotc ;
-    private TextView pelagemtc ;
     private TextView especietc ;
+    private TextView racatc ;
+    private TextView aNasctc ;
+    private TextView sexotc ;
     private TextView portetc;
+    private TextView pesotc ;
+    private TextView alturatc ;
+    private TextView pelagemtc ;
+    private TextView resptc ;
+    private TextView fonetc ;
+    private TextView enderecotc ;
 
     private Pet p;
     //Banco
@@ -69,11 +73,16 @@ public class GUI_04_petCadastrado extends AppCompatActivity {
         nometc = findViewById(R.id.tvnome);
         chiptc = findViewById(R.id.tvchip);
         especietc = findViewById(R.id.tvespecie);
+        racatc = findViewById(R.id.tvraca);
         aNasctc = findViewById(R.id.tvanonasc);
+        sexotc = findViewById(R.id.tvsexo);
         portetc = findViewById(R.id.tvporte);
         alturatc = findViewById(R.id.tvaltura);
         pesotc = findViewById(R.id.tvpeso);
         pelagemtc = findViewById(R.id.tvpelo);
+        resptc = findViewById(R.id.tvresp);
+        fonetc = findViewById(R.id.tvfone);
+        enderecotc = findViewById(R.id.tvendereco);
 
         String acao = getIntent().getStringExtra("acao");
 
@@ -83,11 +92,16 @@ public class GUI_04_petCadastrado extends AppCompatActivity {
             nometc.setText(String.valueOf(p.getNome()));
             chiptc.setText(String.valueOf(p.getChip()));
             especietc.setText(String.valueOf(p.getEspecie()));
+            racatc.setText(String.valueOf(p.getRaca()));
             aNasctc.setText(String.valueOf(p.getAnoNascimento()));
+            sexotc.setText(String.valueOf(p.getSexo()));
             portetc.setText(String.valueOf(p.getPorte()));
             pesotc.setText(String.valueOf(p.getPeso()));
             alturatc.setText(String.valueOf(p.getAltura()));
             pelagemtc.setText(String.valueOf(p.getPelagem()));
+            resptc.setText(String.valueOf(p.getResponsavel()));
+            fonetc.setText(String.valueOf(p.getFone()));
+            enderecotc.setText(String.valueOf(p.getEndereco()));
 
         }
 

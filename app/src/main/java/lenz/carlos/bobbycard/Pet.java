@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Pet implements Serializable {
 
-    private String nome,chip, especie, porte, pelagem ;
+    private String nome,chip, especie, porte, pelagem, raca, sexo ,responsavel, fone, endereco;
     private double peso, altura;
     private int anoNascimento;
 
@@ -70,5 +70,45 @@ public class Pet implements Serializable {
 
     public void setAnoNascimento(int anoNascimento) {
         this.anoNascimento = anoNascimento;
+    }
+
+    public String getRaca() {
+        return raca;
+    }
+
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getResponsavel() {
+        return responsavel;
+    }
+
+    public void setResponsavel(String responsavel) {
+        this.responsavel = responsavel;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

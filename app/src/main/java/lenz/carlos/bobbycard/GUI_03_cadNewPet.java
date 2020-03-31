@@ -20,11 +20,16 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
     private EditText nome;
     private EditText chip;
     private EditText especie;
+    private EditText raca;
     private EditText aNasc;
+    private EditText sexo;
     private EditText porte;
     private EditText altura;
     private EditText peso;
     private EditText pelagem;
+    private EditText resp;
+    private EditText fone;
+    private EditText endereco;
     private Button cad;
     private Button alt;
 
@@ -57,15 +62,26 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
         //Titulo para ser exibido na sua Action Bar em frente à seta
         getSupportActionBar().setTitle("Cadastrar Novo Pet");
 
+
+        View decorView = getWindow().getDecorView();
+        int uiOptions =  View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
+                | View.SYSTEM_UI_FLAG_IMMERSIVE;
+        decorView.setSystemUiVisibility(uiOptions);
+
         // instancia dos componentes da activity
         nome = findViewById(R.id.editNome);
         chip = findViewById(R.id.editChip);
         especie = findViewById(R.id.editEspecie);
+        raca = findViewById(R.id.editRaca);
         aNasc = findViewById(R.id.editAnoNasc);
+        sexo = findViewById(R.id.editSexo);
         porte = findViewById(R.id.editPorte);
         altura = findViewById(R.id.editAltura);
         peso = findViewById(R.id.editPeso);
         pelagem = findViewById(R.id.editPelo);
+        resp = findViewById(R.id.editResp);
+        fone = findViewById(R.id.editFone);
+        endereco = findViewById(R.id.editEndereco);
         cad = findViewById(R.id.btnCadPet);
         alt = findViewById(R.id.btnAltPet);
 
@@ -80,11 +96,17 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
                 p.setNome(nome.getText().toString());
                 p.setChip(chip.getText().toString());
                 p.setEspecie(especie.getText().toString());
+                p.setRaca(raca.getText().toString());
                 p.setAnoNascimento(Integer.parseInt(aNasc.getText().toString()));
+                p.setSexo(sexo.getText().toString());
                 p.setPorte(porte.getText().toString());
                 p.setAltura(Double.parseDouble(altura.getText().toString()));
                 p.setPeso(Double.parseDouble(peso.getText().toString()));
+                p.setPeso(Double.parseDouble(peso.getText().toString()));
                 p.setPelagem(pelagem.getText().toString());
+                p.setResponsavel(resp.getText().toString());
+                p.setFone(fone.getText().toString());
+                p.setEndereco(endereco.getText().toString());
 
                 Toast.makeText(
                         getBaseContext(), "Novo Pet Cadastrado :)",
@@ -115,11 +137,16 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
             nome.setText(String.valueOf(p.getNome()));
             chip.setText(String.valueOf(p.getChip()));
             especie.setText(String.valueOf(p.getEspecie()));
+            raca.setText(String.valueOf(p.getRaca()));
             aNasc.setText(String.valueOf(p.getAnoNascimento()));
+            sexo.setText(String.valueOf(p.getSexo()));
             porte.setText(String.valueOf(p.getPorte()));
             peso.setText(String.valueOf(p.getPeso()));
             altura.setText(String.valueOf(p.getAltura()));
             pelagem.setText(String.valueOf(p.getPelagem()));
+            resp.setText(String.valueOf(p.getResponsavel()));
+            fone.setText(String.valueOf(p.getFone()));
+            endereco.setText(String.valueOf(p.getEndereco()));
 
         }
 
@@ -131,12 +158,16 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
                 p.setNome(nome.getText().toString());
                 p.setChip(chip.getText().toString());
                 p.setEspecie(especie.getText().toString());
+                p.setRaca(raca.getText().toString());
                 p.setAnoNascimento(Integer.parseInt(aNasc.getText().toString()));
+                p.setSexo(sexo.getText().toString());
                 p.setPorte(porte.getText().toString());
                 p.setAltura(Double.parseDouble(altura.getText().toString()));
                 p.setPeso(Double.parseDouble(peso.getText().toString()));
                 p.setPelagem(pelagem.getText().toString());
-
+                p.setResponsavel(resp.getText().toString());
+                p.setFone(fone.getText().toString());
+                p.setEndereco(endereco.getText().toString());
                 Toast.makeText(
                         getBaseContext(),
                         "Informaçoes do Pet Alteradas com Sucesso! ",
@@ -158,11 +189,16 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
         nome.setText(null);
         chip.setText(null);
         especie.setText(null);
+        raca.setText(null);
         aNasc.setText(null);
+        sexo.setText(null);
         porte.setText(null);
         peso.setText(null);
         altura.setText(null);
         pelagem.setText(null);
+        resp.setText(null);
+        fone.setText(null);
+        endereco.setText(null);
     }//fecha limpar
 
     @Override

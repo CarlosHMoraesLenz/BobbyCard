@@ -30,11 +30,16 @@ public class PetDAO {
         cv.put(BaseDAO.PET_NOME, p.getNome());
         cv.put(BaseDAO.PET_CHIPID, p.getChip());
         cv.put(BaseDAO.PET_ESPECIE, p.getEspecie());
+        cv.put(BaseDAO.PET_RACA, p.getRaca());
         cv.put(BaseDAO.PET_ANONASC, p.getAnoNascimento());
+        cv.put(BaseDAO.PET_SEXO, p.getSexo());
         cv.put(BaseDAO.PET_PORTE, p.getPorte());
         cv.put(BaseDAO.PET_PESO, p.getPeso());
         cv.put(BaseDAO.PET_ALTURA, p.getAltura());
         cv.put(BaseDAO.PET_PELAGEM, p.getPelagem());
+        cv.put(BaseDAO.PET_RESP, p.getResponsavel());
+        cv.put(BaseDAO.PET_FONE, p.getFone());
+        cv.put(BaseDAO.PET_ENDERECO, p.getEndereco());
 
         return database.insert(BaseDAO.TBL_PET, null, cv);
     }//fecha inserir
@@ -45,13 +50,18 @@ public class PetDAO {
 
         ContentValues cv = new ContentValues();
         cv.put(BaseDAO.PET_NOME, p.getNome());
-        cv.put(BaseDAO.PET_ESPECIE, p.getEspecie());
-        cv.put(BaseDAO.PET_PORTE, p.getPorte());
-        cv.put(BaseDAO.PET_PELAGEM, p.getPelagem());
         cv.put(BaseDAO.PET_CHIPID, p.getChip());
+        cv.put(BaseDAO.PET_ESPECIE, p.getEspecie());
+        cv.put(BaseDAO.PET_RACA, p.getRaca());
+        cv.put(BaseDAO.PET_ANONASC, p.getAnoNascimento());
+        cv.put(BaseDAO.PET_SEXO, p.getSexo());
+        cv.put(BaseDAO.PET_PORTE, p.getPorte());
         cv.put(BaseDAO.PET_PESO, p.getPeso());
         cv.put(BaseDAO.PET_ALTURA, p.getAltura());
-        cv.put(BaseDAO.PET_ANONASC, p.getAnoNascimento());
+        cv.put(BaseDAO.PET_PELAGEM, p.getPelagem());
+        cv.put(BaseDAO.PET_RESP, p.getResponsavel());
+        cv.put(BaseDAO.PET_FONE, p.getFone());
+        cv.put(BaseDAO.PET_ENDERECO, p.getEndereco());
 
         return String.valueOf(database.update(
                 BaseDAO.TBL_PET,
@@ -91,11 +101,16 @@ public class PetDAO {
             p.setNome(cursor.getString(0));
             p.setChip(cursor.getString(1));
             p.setEspecie(cursor.getString(2));
-            p.setAnoNascimento(cursor.getInt(3));
-            p.setPorte(cursor.getString(4));
-            p.setPeso(cursor.getDouble(5));
-            p.setAltura(cursor.getDouble(6));
-            p.setPelagem(cursor.getString(7));
+            p.setRaca(cursor.getString(3));
+            p.setAnoNascimento(cursor.getInt(4));
+            p.setSexo(cursor.getString(5));
+            p.setPorte(cursor.getString(6));
+            p.setPeso(cursor.getDouble(7));
+            p.setAltura(cursor.getDouble(8));
+            p.setPelagem(cursor.getString(9));
+            p.setResponsavel(cursor.getString(10));
+            p.setFone(cursor.getString(11));
+            p.setEndereco(cursor.getString(12));
             cursor.moveToNext();
             prodAux.add(p);
         }//fecha while

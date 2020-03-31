@@ -8,13 +8,18 @@
     <string name="hintNome">Insira o nome do pet...</string>
     <string name="hintChip">Insira o numero do chip do pet...</string>
     <string name="txtEspecie">Espécie</string>
-    <string name="txtEspecieC">Cachorro</string>
-    <string name="txtEspecieG">Gato</string>
-    <string name="txtEspecieA">Anfibio</string>
+    <string name="txtEspecieC">Canino</string>
+    <string name="txtEspecieF">Felino</string>
+    <string name="txtEspecieA">Anfíbio</string>
     <string name="txtEspecieR">Roedor</string>
     <string name="txtEspecieO">Outros</string>
     <string name="hintEspecie">Insira a espécie do pet...</string>
+    <string name="hintRaca">Insira a raça do pet...</string>
     <string name="hintAnoNasc">Insira o ano de nacimento do pet...</string>
+    <string name="txtSexo">Sexo</string>
+    <string name="txtSexoM">Masculino</string>
+    <string name="txtSexoF">Feminino</string>
+    <string name="hintSexo">Insira o sexo do pet...</string>
     <string name="txtPorte">Porte</string>
     <string name="txtPorteP">Pequeno</string>
     <string name="txtPorteM">Médio</string>
@@ -22,7 +27,10 @@
     <string name="hintPorte">Insira o porte do pet...</string>
     <string name="hintPeso">Insira o peso do pet...</string>
     <string name="hintAltura">Insira a altura do pet...</string>
-    <string name="hintPelo">Insira a cor do pelo do pet...</string>
+    <string name="hintPelo">Insira a cor da pelagem do pet...</string>
+    <string name="hintResp">Insira o nome do responsável pelo pet...</string>
+    <string name="hintFone">Insira o telefone do responsável pelo pet...</string>
+    <string name="hintEndereco">Insira o endereço onde reside o pet...</string>
     <string name="txtAddImg">Adicionar imagem</string>
     <string name="btnchoose">Escolha uma imagem</string>
     <string name="btnCad">Cadastrar</string>
@@ -32,15 +40,22 @@
     <string name="titlenome">Nome:</string>
     <string name="titlechip">Chip:</string>
     <string name="titleespecie">Espécie:</string>
+    <string name="titleraca">Raça:</string>
     <string name="titleanonasc">Nascido:</string>
+    <string name="titlesexo">Sexo:</string>
     <string name="titleporte">Porte:</string>
     <string name="titlepeso">Peso:</string>
     <string name="titlealtura">Altura:</string>
     <string name="titlepelo">Pelagem:</string>
+    <string name="titleresp">Responsável:</string>
+    <string name="titlefone">Telefone:</string>
+    <string name="titleendereco">Endereço:</string>
     <!-- list_inicial -->
     <string name="tvPetNome">Pet nome:</string>
     <string name="tvliPetNome" />
-    <string name="tvPetChip">Pet chip:</string>
+    <string name="tvPetChip">Numero do chip:</string>
     <string name="tvliPetChip" />
+    <string name="tvPetEspecie">Espécie:</string>
+    <string name="tvliPetEspecie" />
     <!--   -->
 </resources>

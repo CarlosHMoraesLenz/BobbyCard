@@ -91,8 +91,8 @@ public class GUI_02_inicial extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
 
         menu.setHeaderTitle("Menu");
-        menu.addSubMenu(DELETAR, DELETAR, 100, "Deletar");
-        menu.addSubMenu(ALTERAR, ALTERAR, 200, "Alterar");
+        menu.add(DELETAR, DELETAR, 100, "Deletar");
+        menu.add(ALTERAR, ALTERAR, 200, "Alterar");
     }//fecha onCreate
 
     @Override
@@ -101,9 +101,9 @@ public class GUI_02_inicial extends AppCompatActivity {
             case DELETAR:
 
                 AlertDialog.Builder msg = new AlertDialog.Builder(GUI_02_inicial.this);
-                msg.setTitle("Alerta");
+                msg.setTitle("Alerta de Exclusão");
                 msg.setMessage("Você tem certeza que deseja excluir?");
-                msg.setIcon(R.mipmap.ic_launcher);
+                msg.setIcon(R.drawable.logo);
                 msg.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

@@ -20,20 +20,61 @@
         android:textSize="15dp"
         android:textColor="@color/title"/>
 
-    <TextView
-        android:id="@+id/tvTitlePetChip"
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvPetChip"
-        android:textSize="18dp"
-        android:textColor="@color/title"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvPetChip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tvliPetChip"
-        android:textSize="15dp"
-        android:textColor="@color/title"/>
+        <LinearLayout
+            android:id="@+id/ti_especie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitlePetEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPetEspecie"
+                android:textColor="@color/title"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvPetEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/tvliPetChip"
+                android:textColor="@color/title"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ti_chip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitlePetChip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvPetChip"
+                android:textColor="@color/title"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvPetChip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/tvliPetChip"
+                android:textColor="@color/title"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </TableRow>
 
 </LinearLayout>
