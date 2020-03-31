@@ -55,6 +55,13 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, GUI_02_inicial.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_03_cadnewpet);
@@ -70,7 +77,7 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
 
         View decorView = getWindow().getDecorView();
         int uiOptions =  View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
-                | View.SYSTEM_UI_FLAG_IMMERSIVE;
+                | View.SYSTEM_UI_FLAG_IMMERSIVE ;
         decorView.setSystemUiVisibility(uiOptions);
 
         // instancia dos componentes da activity

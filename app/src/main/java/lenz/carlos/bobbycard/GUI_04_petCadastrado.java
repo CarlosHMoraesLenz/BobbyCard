@@ -40,6 +40,12 @@ public class GUI_04_petCadastrado extends AppCompatActivity {
     private PetDAO pDAO; //instância responsável pela persistência dos dados
     private ArrayList<Pet> prodAux; //Lista de contatos cadastrados no BD
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, GUI_02_inicial.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();
+    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

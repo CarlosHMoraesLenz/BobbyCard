@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/logocfundo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logocfundo"
+        android:roundIcon="@drawable/roundlogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".GUI_01_opening">
@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".GUI_02_inicial"></activity>
-        <activity android:name=".GUI_03_cadNewPet"></activity>
-        <activity android:name=".GUI_04_petCadastrado"></activity>
+        <activity android:name=".GUI_03_cadNewPet">
+        </activity>
+        <activity android:name=".GUI_04_petCadastrado">
+        </activity>
     </application>
 
 </manifest>

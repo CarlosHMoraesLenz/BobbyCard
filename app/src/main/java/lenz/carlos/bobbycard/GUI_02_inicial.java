@@ -21,6 +21,7 @@ public class GUI_02_inicial extends AppCompatActivity {
     //instancia dos atributos
     private ListView list_inicial;
     private Button btnCadNewPet;
+    private AlertDialog.Builder al;
 
     private PetDAO pDAO; //instância responsável pela persistência dos dados
 
@@ -100,11 +101,11 @@ public class GUI_02_inicial extends AppCompatActivity {
         switch(item.getItemId()){
             case DELETAR:
 
-                AlertDialog.Builder msg = new AlertDialog.Builder(GUI_02_inicial.this);
-                msg.setTitle("Alerta de Exclusão");
-                msg.setMessage("Você tem certeza que deseja excluir?");
-                msg.setIcon(R.drawable.logo);
-                msg.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                al = new AlertDialog.Builder(GUI_02_inicial.this);
+                al.setTitle("Alerta de Exclusão");
+                al.setMessage("Você tem certeza que deseja excluir?");
+                al.setIcon(R.drawable.logo);
+                al.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //Resgatando o produto selecionado pelo usuario
@@ -124,7 +125,7 @@ public class GUI_02_inicial extends AppCompatActivity {
                     }
                 });
 
-                msg.setNeutralButton("Não", new DialogInterface.OnClickListener() {
+                al.setNeutralButton("Não", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(
@@ -133,7 +134,7 @@ public class GUI_02_inicial extends AppCompatActivity {
                                 Toast.LENGTH_LONG).show();
                     }
                 });
-                msg.show();
+                al.show();
                 break;
 
             case ALTERAR:
@@ -149,6 +150,28 @@ public class GUI_02_inicial extends AppCompatActivity {
            }
         return super.onContextItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        al = new AlertDialog.Builder(GUI_02_inicial.this);
+        al.setTitle("Alerta de Saída");
+        al.setMessage("Você tem certeza que deseja sair?");
+        al.setIcon(R.drawable.logo);
+        al.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        al.setNeutralButton("Não", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        al.show();
+    }
+
     @Override
     protected void onResume() {
         // TODO Auto-generated method stub
