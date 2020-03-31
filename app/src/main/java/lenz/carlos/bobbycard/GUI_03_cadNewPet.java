@@ -33,6 +33,11 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
     private Button cad;
     private Button alt;
 
+    private int cnpnasc = 0;
+    private double cnppeso = 0.0;
+    private double cnpaltura = 0.0;
+    private String cnpraca = "SRD";
+
     //instancia classes
     private Pet p;
     private PetDAO pDAO;
@@ -96,28 +101,54 @@ public class GUI_03_cadNewPet extends AppCompatActivity {
                 p.setNome(nome.getText().toString());
                 p.setChip(chip.getText().toString());
                 p.setEspecie(especie.getText().toString());
-                p.setRaca(raca.getText().toString());
-                p.setAnoNascimento(Integer.parseInt(aNasc.getText().toString()));
+                if (raca.getText().toString().equals("")){
+                    p.setRaca(cnpraca);
+                }else{
+                    p.setRaca(raca.getText().toString());
+                }
+                //p.setRaca(raca.getText().toString());
+                if (aNasc.getText().toString().equals("")){
+                    p.setAnoNascimento(cnpnasc);
+                }else{
+                    p.setAnoNascimento(Integer.parseInt(aNasc.getText().toString()));
+                }
+                //p.setAnoNascimento(Integer.parseInt(aNasc.getText().toString()));
                 p.setSexo(sexo.getText().toString());
                 p.setPorte(porte.getText().toString());
-                p.setAltura(Double.parseDouble(altura.getText().toString()));
-                p.setPeso(Double.parseDouble(peso.getText().toString()));
-                p.setPeso(Double.parseDouble(peso.getText().toString()));
+                if (altura.getText().toString().equals("")){
+                    p.setAltura(cnpaltura);
+                }else{
+                    p.setAltura(Double.parseDouble(altura.getText().toString()));
+                }
+                //p.setAltura(Double.parseDouble(altura.getText().toString()));
+                if (peso.getText().toString().equals("")){
+                    p.setPeso(cnpaltura);
+                }else{
+                    p.setPeso(Double.parseDouble(peso.getText().toString()));
+                }
+                //p.setPeso(Double.parseDouble(peso.getText().toString()));
                 p.setPelagem(pelagem.getText().toString());
                 p.setResponsavel(resp.getText().toString());
                 p.setFone(fone.getText().toString());
                 p.setEndereco(endereco.getText().toString());
 
-                Toast.makeText(
-                        getBaseContext(), "Novo Pet Cadastrado :)",
-                        Toast.LENGTH_LONG).show();
+                if (nome.getText().toString().equals("") || especie.getText().toString().equals("")
+                        || sexo.getText().toString().equals("") || porte.getText().toString().equals("")
+                        || resp.getText().toString().equals("") || fone.getText().toString().equals("")){
+                    Toast.makeText(getBaseContext(), "O campo obrigatário não inserido",
+                            Toast.LENGTH_LONG).show();
+                }else{
+                    Toast.makeText(
+                            getBaseContext(), "Novo Pet Cadastrado :)",
+                            Toast.LENGTH_LONG).show();
 
-                //Enviando para o método cadastrar
-                pDAO.inserir(p);
+                    //Enviando para o método cadastrar
+                    pDAO.inserir(p);
 
-                limpar();
-                Intent telaPetCad = new Intent(GUI_03_cadNewPet.this, GUI_02_inicial.class);
-                startActivity(telaPetCad);
+                    limpar();
+                    Intent telaPetCad = new Intent(GUI_03_cadNewPet.this, GUI_02_inicial.class);
+                    startActivity(telaPetCad);
+                }
             }
         });
 
