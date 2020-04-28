@@ -6,4 +6,4 @@ app destinado ao cadastro de seus pets, e que futuramente recebera opções de c
 [Lucas Silva](https://github.com/lucas-matheus-almeida-97)
 
 ### Download apk
-[Bobby's Card](https://github.com/CarlosHMoraesLenz/BobbyCard/raw/master/app/release/app-release.apk)
+<img src="https://github.com/CarlosHMoraesLenz/BobbyCard/blob/master/apkdownload.png" alt="apk" width="30"/> [Bobby's Card](https://github.com/CarlosHMoraesLenz/BobbyCard/raw/master/app/release/app-release.apk)
