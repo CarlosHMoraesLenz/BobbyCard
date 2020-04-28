@@ -1,4 +1,5 @@
-# BobbyCard
+#  BobbyCard <img src="https://github.com/CarlosHMoraesLenz/BobbyCard/blob/master/app/src/main/res/drawable/logo.png" alt="logo" width="30"/>
+
 ## Carteirinha do pet
 app destinado ao cadastro de seus pets, e que futuramente recebera opções de cadastrar e adicionar lembretes de vacinas, fazer downnload das informações em um arquivo e gerar placa de procura-secaso o pet se perca.
 
